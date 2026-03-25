@@ -65,10 +65,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             });
         }
         
-        // Show resultado if PHP showed results
         const resultado = document.getElementById('resultado');
         if (resultado && resultado.style.display !== 'none') {
-            // Already visible or PHP inline style
+            
         }
     });
     </script>
