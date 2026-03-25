@@ -58,8 +58,32 @@
         // $nom = "Rodrigo";
         // $snom = "Nogueira";
         // echo "O nome do lutador é $nom \"Minoutauro\" $snom \u{1F44B}";
+
+        $ra = 5 + 2; 
+
+        $rb = 5 - 2;
+
+        $rc = 5 * 2;
+
+        $rd = 5 / 2;
+
+        $re = 5 % 2;
+
+        $rf = 5 ** 2;
+
+        $rg = 5 + 2 * 3 - 4 / 2; // 5 + 6 - 2 = 9
         
+        $rh = base_convert(254, 10, 8);
         
+        echo "O resultado da operação é $ra <br>";
+        echo "O resultado da operação é $rb <br>";
+        echo "O resultado da operação é $rc <br>";
+        echo "O resultado da operação é $rd <br>";
+        echo "O resultado da operação é $re <br>";
+        echo "O resultado da operação é $rf <br>";
+        echo "O resultado da operação é $rg <br>";
+        echo("A resposta é $rh");
+
     ?>    
 </body>
 </html>
