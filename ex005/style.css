@@ -89,3 +89,18 @@ button:hover {
     font-weight: bold;
     color: #3b3fa5;
 }
+
+#resultado {
+    display: none;
+}
+
+#voltar {
+    margin-top: 20px;
+    background-color: #f44336;
+    border: 2px solid #f44336;
+}
+
+#voltar:hover {
+    background-color: #da190b;
+    border-color: #da190b;
+}

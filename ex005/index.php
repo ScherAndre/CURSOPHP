@@ -45,13 +45,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
 
         <?php if ($numero !== null): ?>
-        <div class="resultado">
+        <div class="resultado" id="resultado" style="display: block;">
             <p>Número informado: <span><?= $numero ?></span></p>
             <p>Antecessor: <span><?= $antecessor ?></span></p>
             <p>Sucessor: <span><?= $sucessor ?></span></p>
+            <button type="button" id="voltar">Voltar</button>
         </div>
         <?php endif; ?>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const voltarBtn = document.getElementById('voltar');
+        if (voltarBtn) {
+            voltarBtn.addEventListener('click', function() {
+                document.getElementById('numero').value = '';
+                document.getElementById('resultado').style.display = 'none';
+                document.getElementById('numero').focus();
+            });
+        }
+        
+        // Show resultado if PHP showed results
+        const resultado = document.getElementById('resultado');
+        if (resultado && resultado.style.display !== 'none') {
+            // Already visible or PHP inline style
+        }
+    });
+    </script>
 
 </body>
 </html>
